@@ -19,7 +19,7 @@ do
 
 		while [ $i -lt $y ]
 		do
-			CMD="grep -q \${MOUNTS${i}} /proc/mounts"
+			CMD="grep -q \${MOUNT_POINTS${i}} /proc/mounts"
 			eval $CMD
 			ret=$?
 			if [ $ret != 0 ]; then
