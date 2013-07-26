@@ -17,3 +17,5 @@ chmod 755 $ROOT
 chmod 755 $ROOT/etc
 chmod 755 $ROOT/root
 chmod 755 $ROOT/opt
+
+cp -a /etc/* $ROOT/etc/
