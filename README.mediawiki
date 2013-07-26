@@ -18,6 +18,7 @@ Edit <code>ROOT</code> in <code>init_usb_fs.sh</code> to match your mount locati
 <img src="screenshots/ssh_enabled_2.png" />
 <p align="center">Enable ssh</p>
 
+Run the following.
 <pre>
 ssh root@192.168.1.1 'sh -s' < init_usb_fs.sh
 ssh root@192.168.1.1 'sh -s' < startup_usb_fs.sh
