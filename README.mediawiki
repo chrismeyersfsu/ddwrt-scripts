@@ -4,3 +4,16 @@
 * allow vpn (i.e. pptp) dlna access by routing broadcast and multicast requests correctly (i.e. requests made by upnp discovery)
 * startup scripts to auto-mount usb and correctly extend storage
 * Documents
+
+== Extra USB Storage ==
+
+<img src="screenshots/usb_config.png" />
+<p align="center">Ensure the usb storage is enabled and your device is plugged in and detected.</p>
+Edit <code>ROOT</code> in <code>init_usb_fs.sh</code> 
+
+<img src="screenshots/ssh_enabled_1.png" />
+<img src="screenshots/ssh_enabled_2.png" />
+<p align="center">Enable ssh</p>
+
+<pre>ssh root@192.168.1.1 'sh -s' < init_usb_fs.sh</pre>
+
