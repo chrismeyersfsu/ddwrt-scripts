@@ -10,7 +10,7 @@
 By default most routers that run DDWRT have little persistant storage. This is problematic when you wish to install other packages using <code>opkg</code>. To remedy this, we supplement the internal storage with external usb storage.
 <img src="screenshots/usb_config.png" />
 <p align="center">Ensure the usb storage is enabled and your device is plugged in and detected.</p>
-Edit <code>ROOT</code> in <code>init_usb_fs.sh</code> 
+Edit <code>ROOT</code> in <code>init_usb_fs.sh</code> to match your mount location (i.e. /tmp/mnt/disc0-part1)
 
 <img src="screenshots/ssh_enabled_1.png" />
 <img src="screenshots/ssh_enabled_2.png" />
