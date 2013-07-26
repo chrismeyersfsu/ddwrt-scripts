@@ -27,3 +27,22 @@ ssh root@192.168.1.1 'sh -s' < startup_usb_fs.sh
 === Startup ===
 
 Each time the router reboots we need to remount the usb folders. To do so we use the ddwrt web interface <b>Administration -> Commands</b>. Paste the <code>startup_usb_fs.sh</code> into the <b>Command Shell</b> text box then click <b>Save Startup</b>.
+
+=== Extras ===
+
+Now that you have extra space you can install extra packages (i.e. minidlna, bitorrent, etc.). However, they will install into places the "system" doesn't know about. Specifically the libraries that are installed will now be known. Thus, we need to make them known.
+<pre>
+opkg update
+opkg install libconfig
+</pre>
+
+Edit <code>/etc/ld.so.conf</code> and add the following to the <b>TOP</b>
+<pre>
+/opt/lib/
+/opt/usr/lib/
+</pre>
+
+Tell the system to update the library path information.
+<pre>
+ldconfig
+</pre>
