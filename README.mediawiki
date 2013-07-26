@@ -1,0 +1,6 @@
+== DDWRT Misc. Scripts ==
+
+* Init filesystem structure for usb extended storage
+* allow vpn (i.e. pptp) dlna access by routing broadcast and multicast requests correctly (i.e. requests made by upnp discovery)
+* startup scripts to auto-mount usb and correctly extend storage
+* Documents
