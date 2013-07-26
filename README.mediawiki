@@ -9,7 +9,7 @@
 
 By default most routers that run DDWRT have little persistant storage. This is problematic when you wish to install other packages using <code>opkg</code>. To remedy this, we supplement the internal storage with external usb storage.
 
-==== Init ====
+=== Init ===
 <img src="screenshots/usb_config.png" />
 <p align="center">Ensure the usb storage is enabled and your device is plugged in and detected.</p>
 Edit <code>ROOT</code> in <code>init_usb_fs.sh</code> to match your mount location (i.e. /tmp/mnt/disc0-part1)
@@ -23,6 +23,6 @@ ssh root@192.168.1.1 'sh -s' < init_usb_fs.sh
 ssh root@192.168.1.1 'sh -s' < startup_usb_fs.sh
 </pre>
 
-==== Startup ====
+=== Startup ===
 
 Each time the router reboots we need to remount the usb folders. To do so we use the ddwrt web interface <b>Administration -> Commands</b>. Paste the <code>startup_usb_fs.sh</code> into the <b>Command Shell</b> text box then click <b>Save Startup</b>.
